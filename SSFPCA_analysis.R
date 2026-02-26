@@ -27,7 +27,7 @@ load("data/long_test.RData")   # Testing longitudinal functional data
 # --------------------------
 # 2. Load Custom Functions
 # --------------------------
-source("R/functional_utils.R")  # Load SSFPCA core functions
+source("code/functional_utils.R")  # Load SSFPCA core functions
 
 
 # --------------------------
