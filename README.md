@@ -18,9 +18,7 @@ Core utility functions for SSFPCA implementation—designed to extract survival-
 GetCEScores(): Calculate Conditional Expectation (CE) scores for functional longitudinal data (core step to quantify subject-specific functional component contributions);
 GetMuPhiSig(): Interpolate population-level mean/eigenfunctions to subject-specific observation times (align functional estimates with individual measurement timelines);
 GetIndCEScores(): Compute individual CE scores (wraps C++ implementation from fdapace for efficiency);
-sup_basis_fun_use(): Generate survival-supervised basis functions by integrating FPCA results with survival pseudo-observations (the core of SSFPCA—links functional features to survival outcomes);
-dat.to.mats(): Convert long-format longitudinal data to subject-specific lists (values + time points) for FPCA compatibility;
-cond.prob.pec.cox(): Calculate conditional survival probability using a fitted Cox proportional hazards model (predicts survival to t_pred given survival to t_star).
+sup_basis_fun_use(): Generate survival-supervised basis functions by integrating FPCA results with survival pseudo-observations (the core of SSFPCA—links functional features to survival outcomes).
 
 Data File Descriptions
 The analysis uses th pbc2 dataset from the JM R package. The used dataset includes:
