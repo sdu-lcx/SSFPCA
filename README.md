@@ -5,7 +5,7 @@ Traditional FPCA extracts features that capture the maximum variance in longitud
 SSFPCA incorporates survival information during the dimension reduction process to extract functional features that are most relevant to survival outcomes, thereby enhancing prediction accuracy. 
 This repository provides a complete implementation of SSFPCA along with an application to the Mayo Clinic Primary Biliary Cirrhosis Data, demonstrating how longitudinal serum bilirubin measurements can be used to improve survival prediction.
 
-File Descriptions
+Code File Descriptions
 1. SSFPCA_analysis.R
 Full analysis pipeline for survival prediction based on SSFPCA, main analysis script that demonstrates:
 Loading and preparing the PBC2 dataset;
@@ -22,7 +22,7 @@ sup_basis_fun_use(): Generate survival-supervised basis functions by integrating
 dat.to.mats(): Convert long-format longitudinal data to subject-specific lists (values + time points) for FPCA compatibility;
 cond.prob.pec.cox(): Calculate conditional survival probability using a fitted Cox proportional hazards model (predicts survival to t_pred given survival to t_star).
 
-Data Description
+Data File Descriptions
 The analysis uses th pbc2 dataset from the JM R package. The used dataset includes:
 Longitudinal data: Repeated measurements of serum bilirubin, a key biomarker for liver function
 Survival data: Time to death or liver transplantation with censoring information
